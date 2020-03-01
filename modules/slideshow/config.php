@@ -44,7 +44,12 @@ return [
                 ],
                 'user' => [
                     'type' => 'object',
-                    'model' => 'LibUser\\Library\\Fetcher',
+                    'model' => [
+                        'name' => 'LibUser\\Library\\Fetcher',
+                        'field' => 'id',
+                        'type' => 'number'
+                    ],
+                    'format' => 'user'
                 ],
                 'name' => [
                     'type' => 'text'
