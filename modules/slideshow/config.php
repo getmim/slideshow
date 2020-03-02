@@ -55,13 +55,28 @@ return [
                     'type' => 'text'
                 ],
                 'images' => [
-                    'type' => 'json'
+                    'type' => 'json',
+                    'format' => 'slideshow-image'
                 ],
                 'updated' => [
                     'type' => 'date'
                 ],
                 'created' => [
                     'type' => 'date'
+                ]
+            ],
+            'slideshow-image' => [
+                'url' => [
+                    'type' => 'media'
+                ],
+                'text' => [
+                    'type' => 'text'
+                ],
+                'title' => [
+                    'type' => 'text'
+                ],
+                'action' => [
+                    'type' => 'text'
                 ]
             ]
         ]
